@@ -1,0 +1,315 @@
++++MirrorBTL Random Test Run+++
+Testing the file MirrorFMD.cpp by Michael Fryer
+
+Input File: randomFiles/mirrorBTL1in.txt
+Result: 
+Pattern 1 was improperly transformed.
+Pattern 2 was reflected vertically and rotated 180 degrees.
+Pattern 3 was reflected vertically and rotated 90 degrees.
+Pattern 4 was rotated 180 degrees.
+Pattern 5 was reflected vertically.
+Pattern 6 was improperly transformed.
+Pattern 7 was reflected vertically.
+Pattern 8 was preserved.
+Pattern 9 was preserved.
+
+Input File: randomFiles/mirrorBTL2in.txt
+Result: 
+Pattern 1 was preserved.
+Pattern 2 was reflected vertically and rotated 90 degrees.
+Pattern 3 was reflected vertically and rotated 90 degrees.
+Pattern 4 was rotated 180 degrees.
+Pattern 5 was reflected vertically and rotated 90 degrees.
+Pattern 6 was reflected vertically and rotated 180 degrees.
+Pattern 7 was reflected vertically.
+
+Input File: randomFiles/mirrorBTL3in.txt
+Result: 
+Pattern 1 was rotated 90 degrees.
+Pattern 2 was preserved.
+Pattern 3 was preserved.
+Pattern 4 was reflected vertically and rotated 270 degrees.
+Pattern 5 was reflected vertically and rotated 270 degrees.
+Pattern 6 was rotated 270 degrees.
+Pattern 7 was reflected vertically and rotated 90 degrees.
+Pattern 8 was improperly transformed.
+Pattern 9 was preserved.
+Pattern 10 was reflected vertically and rotated 270 degrees.
+Pattern 11 was reflected vertically and rotated 180 degrees.
+Pattern 12 was rotated 270 degrees.
+Pattern 13 was improperly transformed.
+Pattern 14 was improperly transformed.
+Pattern 15 was reflected vertically and rotated 270 degrees.
+Pattern 16 was improperly transformed.
+Pattern 17 was rotated 270 degrees.
+Pattern 18 was rotated 180 degrees.
+Pattern 19 was preserved.
+Pattern 20 was rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL4in.txt
+Result: 
+Pattern 1 was reflected vertically and rotated 270 degrees.
+Pattern 2 was reflected vertically and rotated 270 degrees.
+Pattern 3 was reflected vertically and rotated 180 degrees.
+Pattern 4 was improperly transformed.
+Pattern 5 was reflected vertically and rotated 180 degrees.
+Pattern 6 was reflected vertically and rotated 270 degrees.
+
+Input File: randomFiles/mirrorBTL5in.txt
+Result: 
+Pattern 1 was improperly transformed.
+Pattern 2 was preserved.
+Pattern 3 was improperly transformed.
+Pattern 4 was rotated 180 degrees.
+Pattern 5 was reflected vertically and rotated 180 degrees.
+Pattern 6 was reflected vertically and rotated 180 degrees.
+Pattern 7 was preserved.
+Pattern 8 was preserved.
+Pattern 9 was reflected vertically and rotated 180 degrees.
+Pattern 10 was reflected vertically and rotated 180 degrees.
+
+Input File: randomFiles/mirrorBTL6in.txt
+Result: 
+Pattern 1 was preserved.
+Pattern 2 was preserved.
+Pattern 3 was reflected vertically.
+Pattern 4 was rotated 270 degrees.
+Pattern 5 was rotated 270 degrees.
+Pattern 6 was rotated 90 degrees.
+Pattern 7 was improperly transformed.
+Pattern 8 was rotated 180 degrees.
+Pattern 9 was rotated 90 degrees.
+Pattern 10 was rotated 270 degrees.
+Pattern 11 was reflected vertically.
+Pattern 12 was reflected vertically.
+Pattern 13 was reflected vertically and rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL7in.txt
+Result: 
+Pattern 1 was rotated 90 degrees.
+Pattern 2 was rotated 90 degrees.
+Pattern 3 was rotated 180 degrees.
+Pattern 4 was reflected vertically and rotated 270 degrees.
+Pattern 5 was preserved.
+Pattern 6 was rotated 90 degrees.
+Pattern 7 was improperly transformed.
+Pattern 8 was rotated 90 degrees.
+Pattern 9 was rotated 90 degrees.
+Pattern 10 was reflected vertically.
+Pattern 11 was reflected vertically and rotated 270 degrees.
+Pattern 12 was preserved.
+Pattern 13 was preserved.
+Pattern 14 was improperly transformed.
+Pattern 15 was preserved.
+Pattern 16 was reflected vertically and rotated 90 degrees.
+Pattern 17 was reflected vertically.
+Pattern 18 was rotated 270 degrees.
+Pattern 19 was rotated 90 degrees.
+Pattern 20 was rotated 270 degrees.
+
+Input File: randomFiles/mirrorBTL8in.txt
+Result: 
+Pattern 1 was reflected vertically and rotated 180 degrees.
+Pattern 2 was rotated 270 degrees.
+Pattern 3 was rotated 180 degrees.
+Pattern 4 was reflected vertically and rotated 270 degrees.
+Pattern 5 was rotated 270 degrees.
+Pattern 6 was reflected vertically and rotated 180 degrees.
+Pattern 7 was reflected vertically and rotated 180 degrees.
+Pattern 8 was reflected vertically and rotated 270 degrees.
+Pattern 9 was improperly transformed.
+Pattern 10 was preserved.
+Pattern 11 was improperly transformed.
+Pattern 12 was reflected vertically and rotated 90 degrees.
+Pattern 13 was rotated 270 degrees.
+Pattern 14 was reflected vertically.
+Pattern 15 was rotated 180 degrees.
+Pattern 16 was improperly transformed.
+
+Input File: randomFiles/mirrorBTL9in.txt
+Result: 
+Pattern 1 was reflected vertically and rotated 90 degrees.
+Pattern 2 was rotated 90 degrees.
+Pattern 3 was preserved.
+Pattern 4 was rotated 90 degrees.
+Pattern 5 was rotated 90 degrees.
+Pattern 6 was rotated 90 degrees.
+Pattern 7 was preserved.
+Pattern 8 was rotated 180 degrees.
+Pattern 9 was reflected vertically and rotated 90 degrees.
+Pattern 10 was improperly transformed.
+Pattern 11 was reflected vertically and rotated 180 degrees.
+
+Input File: randomFiles/mirrorBTL10in.txt
+Result: 
+Pattern 1 was rotated 180 degrees.
+Pattern 2 was rotated 90 degrees.
+Pattern 3 was reflected vertically and rotated 180 degrees.
+Pattern 4 was rotated 270 degrees.
+Pattern 5 was rotated 270 degrees.
+Pattern 6 was rotated 180 degrees.
+
+Input File: randomFiles/mirrorBTL11in.txt
+Result: 
+Pattern 1 was rotated 90 degrees.
+Pattern 2 was reflected vertically and rotated 270 degrees.
+Pattern 3 was rotated 180 degrees.
+Pattern 4 was reflected vertically and rotated 90 degrees.
+Pattern 5 was preserved.
+Pattern 6 was rotated 180 degrees.
+Pattern 7 was reflected vertically and rotated 270 degrees.
+Pattern 8 was reflected vertically and rotated 270 degrees.
+Pattern 9 was preserved.
+Pattern 10 was improperly transformed.
+Pattern 11 was rotated 270 degrees.
+Pattern 12 was rotated 270 degrees.
+Pattern 13 was rotated 270 degrees.
+Pattern 14 was rotated 90 degrees.
+Pattern 15 was preserved.
+Pattern 16 was rotated 180 degrees.
+Pattern 17 was preserved.
+
+Input File: randomFiles/mirrorBTL12in.txt
+Result: 
+Pattern 1 was preserved.
+Pattern 2 was rotated 90 degrees.
+Pattern 3 was reflected vertically.
+Pattern 4 was reflected vertically and rotated 270 degrees.
+Pattern 5 was rotated 90 degrees.
+Pattern 6 was rotated 180 degrees.
+Pattern 7 was rotated 90 degrees.
+Pattern 8 was reflected vertically.
+Pattern 9 was improperly transformed.
+
+Input File: randomFiles/mirrorBTL13in.txt
+Result: 
+Pattern 1 was improperly transformed.
+Pattern 2 was reflected vertically and rotated 90 degrees.
+Pattern 3 was preserved.
+Pattern 4 was rotated 270 degrees.
+Pattern 5 was improperly transformed.
+Pattern 6 was preserved.
+Pattern 7 was reflected vertically and rotated 180 degrees.
+Pattern 8 was preserved.
+Pattern 9 was preserved.
+Pattern 10 was improperly transformed.
+Pattern 11 was rotated 180 degrees.
+Pattern 12 was rotated 180 degrees.
+Pattern 13 was preserved.
+Pattern 14 was reflected vertically.
+Pattern 15 was rotated 270 degrees.
+Pattern 16 was rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL14in.txt
+Result: 
+Pattern 1 was reflected vertically and rotated 90 degrees.
+Pattern 2 was rotated 180 degrees.
+Pattern 3 was reflected vertically and rotated 270 degrees.
+Pattern 4 was rotated 180 degrees.
+Pattern 5 was improperly transformed.
+Pattern 6 was reflected vertically and rotated 180 degrees.
+Pattern 7 was preserved.
+Pattern 8 was preserved.
+Pattern 9 was preserved.
+Pattern 10 was rotated 90 degrees.
+Pattern 11 was reflected vertically and rotated 90 degrees.
+Pattern 12 was reflected vertically and rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL15in.txt
+Result: 
+Pattern 1 was reflected vertically.
+Pattern 2 was rotated 180 degrees.
+Pattern 3 was rotated 90 degrees.
+Pattern 4 was reflected vertically.
+Pattern 5 was rotated 90 degrees.
+Pattern 6 was preserved.
+Pattern 7 was rotated 90 degrees.
+Pattern 8 was reflected vertically and rotated 90 degrees.
+Pattern 9 was preserved.
+Pattern 10 was rotated 90 degrees.
+Pattern 11 was rotated 90 degrees.
+Pattern 12 was reflected vertically and rotated 180 degrees.
+Pattern 13 was rotated 180 degrees.
+Pattern 14 was preserved.
+Pattern 15 was rotated 90 degrees.
+Pattern 16 was rotated 180 degrees.
+Pattern 17 was preserved.
+Pattern 18 was rotated 180 degrees.
+Pattern 19 was rotated 90 degrees.
+Pattern 20 was rotated 270 degrees.
+
+Input File: randomFiles/mirrorBTL16in.txt
+Result: 
+Pattern 1 was reflected vertically.
+Pattern 2 was improperly transformed.
+Pattern 3 was reflected vertically and rotated 180 degrees.
+Pattern 4 was reflected vertically.
+Pattern 5 was reflected vertically and rotated 180 degrees.
+
+Input File: randomFiles/mirrorBTL17in.txt
+Result: 
+Pattern 1 was rotated 90 degrees.
+Pattern 2 was preserved.
+Pattern 3 was reflected vertically.
+Pattern 4 was rotated 270 degrees.
+Pattern 5 was preserved.
+Pattern 6 was rotated 270 degrees.
+Pattern 7 was preserved.
+Pattern 8 was preserved.
+Pattern 9 was reflected vertically and rotated 90 degrees.
+Pattern 10 was rotated 180 degrees.
+Pattern 11 was rotated 270 degrees.
+Pattern 12 was rotated 180 degrees.
+Pattern 13 was preserved.
+Pattern 14 was rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL18in.txt
+Result: 
+Pattern 1 was rotated 180 degrees.
+Pattern 2 was rotated 270 degrees.
+Pattern 3 was reflected vertically and rotated 90 degrees.
+Pattern 4 was preserved.
+Pattern 5 was rotated 90 degrees.
+Pattern 6 was preserved.
+Pattern 7 was preserved.
+Pattern 8 was reflected vertically and rotated 270 degrees.
+Pattern 9 was reflected vertically.
+Pattern 10 was preserved.
+Pattern 11 was rotated 180 degrees.
+Pattern 12 was preserved.
+Pattern 13 was rotated 90 degrees.
+Pattern 14 was reflected vertically.
+Pattern 15 was reflected vertically and rotated 90 degrees.
+
+Input File: randomFiles/mirrorBTL19in.txt
+Result: 
+Pattern 1 was reflected vertically and rotated 90 degrees.
+Pattern 2 was preserved.
+Pattern 3 was rotated 180 degrees.
+Pattern 4 was rotated 90 degrees.
+Pattern 5 was rotated 270 degrees.
+Pattern 6 was improperly transformed.
+Pattern 7 was reflected vertically and rotated 180 degrees.
+
+Input File: randomFiles/mirrorBTL20in.txt
+Result: 
+Pattern 1 was preserved.
+Pattern 2 was rotated 270 degrees.
+Pattern 3 was improperly transformed.
+Pattern 4 was rotated 180 degrees.
+Pattern 5 was reflected vertically and rotated 90 degrees.
+Pattern 6 was preserved.
+Pattern 7 was preserved.
+Pattern 8 was improperly transformed.
+Pattern 9 was rotated 270 degrees.
+Pattern 10 was rotated 90 degrees.
+Pattern 11 was reflected vertically and rotated 90 degrees.
+Pattern 12 was rotated 180 degrees.
+Pattern 13 was rotated 270 degrees.
+Pattern 14 was rotated 270 degrees.
+Pattern 15 was reflected vertically.
+Pattern 16 was rotated 90 degrees.
+Pattern 17 was reflected vertically and rotated 180 degrees.
+Pattern 18 was rotated 90 degrees.
+
+---MirrorBTL Random Test Run---

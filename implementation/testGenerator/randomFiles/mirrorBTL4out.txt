@@ -1,0 +1,5 @@
+Pattern 0 was improperly transformed.
+Pattern 1 was improperly transformed.
+Pattern 2 was rotated 180 degrees.
+Pattern 3 was rotated 180 degrees.
+Pattern 4 was reflected vertically.

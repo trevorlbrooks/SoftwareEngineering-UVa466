@@ -1,0 +1,2 @@
+Pattern 1 was preserved.
+Pattern 2 was rotated 90 degrees.

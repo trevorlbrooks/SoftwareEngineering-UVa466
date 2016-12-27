@@ -1,0 +1,3 @@
+Pattern 1 was rotated 180 degrees.
+Pattern 2 was preserved.
+Pattern 3 was rotated 180 degrees.

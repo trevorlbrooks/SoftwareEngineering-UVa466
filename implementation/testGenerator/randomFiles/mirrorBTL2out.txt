@@ -1,0 +1,5 @@
+Pattern 0 was reflected vertically and rotated 180 degrees.
+Pattern 1 was reflected vertically and rotated 90 degrees.
+Pattern 2 was preserved.
+Pattern 3 was reflected vertically and rotated 270 degrees.
+Pattern 4 was rotated 90 degrees.

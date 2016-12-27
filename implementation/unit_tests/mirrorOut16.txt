@@ -1,0 +1,2 @@
+Pattern 1 was improperly transformed.
+Pattern 2 was preserved.

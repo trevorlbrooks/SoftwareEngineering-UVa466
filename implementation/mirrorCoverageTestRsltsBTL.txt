@@ -1,0 +1,389 @@
+        -:    0:Source:mirrorBTL.cpp
+        -:    0:Graph:mirrorBTL.gcno
+        -:    0:Data:mirrorBTL.gcda
+        -:    0:Runs:21
+        -:    0:Programs:1
+        -:    1://	MirrorBTL
+        -:    2://	MirrorBTL.cpp
+        -:    3://Trevor Brooks
+        -:    4://Using C++ Std Version 3.0
+        -:    5://Edited and compiled in VS 2015
+        -:    6:
+        -:    7://-------------
+        -:    8:// C++ includes
+        -:    9://-------------
+        -:   10:
+        -:   11:#include <stdlib.h>
+        -:   12:#include <iostream>
+        -:   13:#include <string>
+        -:   14:
+        -:   15:/** ******************************************************
+        -:   16:DESCRIPTION - main
+        -:   17:
+        -:   18:
+        -:   19:REQUIREMENTS
+        -:   20:The priority of these requirements is imperative.
+        -:   21:
+        -:   22:**Constraints
+        -:   23:R01.	MirrorBTL is coded in C++.
+        -:   24:Validation: Inspection and Test (Build)
+        -:   25:R02.	The source file for ServiceStationBTL is in compliance with MTM C++ Source File Standard v4.0.
+        -:   26:Validation: Inspection
+        -:   27:R03.	The SMDS conforms to version 4.2 of the standard.
+        -:   28:**Preconditions
+        -:   29:R04.	The input file is well-formed, follows the input/output requirements, and exists.
+        -:   30:**Invocation
+        -:   31:R05.	Launch application execution file.
+        -:   32:Validation: Test
+        -:   33:**Input/Ouput
+        -:   34:R06.	Input consists of an unknown number of patterns.
+        -:   35:Validation: Test
+        -:   36:R07.	Patterns start with a positive integer (patternSize) on its own line that signifies the number of rows and columns in the pattern.
+        -:   37:Validation: Inspection
+        -:   38:R08.	patternSize is between 1 and 10 inclusive.
+        -:   39:Validation:Test
+        -:   40:R09.	The following patternSize lines are made up of the patterns.
+        -:   41:Validation: Test
+        -:   42:R10.	Each pattern line has patternSize characters followed by a space and then another patternSize characters.
+        -:   43:Validation: Test
+        -:   44:R11.	The first set of patternSize characters is the row of the original image.
+        -:   45:Validation: Test
+        -:   46:R12.	The second set of patternSize characters is the row of the transformed image.
+        -:   47:Validation: Test
+        -:   48:R13.	The two allowed characters for the images are a period ‘.’ and ‘X’
+        -:   49:Validation: Test
+        -:   50:R14.	The variable patternNum corresponds to the number of the pattern in the input sequence.
+        -:   51:Validation: Test
+        -:   52:R15.	The output is a sentence on its own line output to stdout.
+        -:   53:Validation: Test
+        -:   54:a.	If the image was rotated by 90, 180, or 270 degrees “Pattern XX was rotated ZZ degrees.” is output, where XX is the patternNum of the pattern and ZZ is the rotation angle.
+        -:   55:b.	If the image was vertically reflected “Pattern XX was reflected vertically.” is output where XX is the patternNum.
+        -:   56:c.	If the image was reflected and then rotated, “Pattern XX was reflected vertically and rotated ZZ degrees.” is output, where XX is the patternNum and ZZ is the number of degrees it was reflected.
+        -:   57:d.	If no changes were made to the pattern “Pattern XX was preserved.” is output, where XX is the patternNum.
+        -:   58:e.	If none of the above is true, “Pattern XX was improperly transformed.” is output, where XX is the patternNum.
+        -:   59:
+        -:   60:**Postconditons
+        -:   61:R16.	The input file is still in the system.
+        -:   62:      Validation: Inspection
+        -:   63:**Testing
+        -:   64:R17.	MirrorBTL will be tested using test scripts and test files.
+        -:   65:Validation: Inspection
+        -:   66:R18.	MirrorBTL will be randomly tested against another student’s version.
+        -:   67:Validation: Inspection
+        -:   68:**Inspection
+        -:   69:None
+        -:   70:
+        -:   71:**Algorithm Correctness Argument
+        -:   72:R19.	A correctness algorithm will be provided for both the algorithm and the code.   Validation: Inspection
+        -:   73:
+        -:   74:
+        -:   75:SAMPLE RUN(S)
+        -:   76:5
+        -:   77:X...X ....X
+        -:   78:.X... ...X.
+        -:   79:...X. .X...
+        -:   80:..X.X ..X..
+        -:   81:....X XX..X
+        -:   82:6
+        -:   83:....XX X....X
+        -:   84:...X.. X.X...
+        -:   85:XX..X. .X..X.
+        -:   86:..X... ...X.X
+        -:   87:...X.. ..X...
+        -:   88:..X..X ..X...
+        -:   89:2
+        -:   90:X. X.
+        -:   91:.X .X
+        -:   92:4
+        -:   93:..X. ...X
+        -:   94:XX.. ....
+        -:   95:.... XX..
+        -:   96:...X ..X.
+        -:   97:5
+        -:   98:X.... .X...
+        -:   99:.X... ..X..
+        -:  100:.X... ..X..
+        -:  101:...X. ....X
+        -:  102:....X X....
+        -:  103:4
+        -:  104:.X.. ..X.
+        -:  105:.X.X X...
+        -:  106:.... ..XX
+        -:  107:..X. ....
+        -:  108:2
+        -:  109:.. XX
+        -:  110:XX ..
+        -:  111:
+        -:  112:Then stdout should be
+        -:  113:Pattern 1 was rotated 90 degrees.
+        -:  114:Pattern 2 was rotated 270 degrees.
+        -:  115:Pattern 3 was preserved.
+        -:  116:Pattern 4 was reflected vertically.
+        -:  117:Pattern 5 was improperly transformed.
+        -:  118:Pattern 6 was reflected vertically and rotated 270 degrees.
+        -:  119:Pattern 7 was rotated 180 degrees.
+        -:  120:
+        -:  121:
+        -:  122:DESIGN
+        -:  123:Significant Data Items/Structures
+        -:  124:--------------------------------------------
+        -:  125:int[][] transformationMatrix
+        -:  126:	Rows relate to the various transformations
+        -:  127:	Columns relates to the following
+        -:  128:		1st column: invertX – If 1, read the X values from high to low
+        -:  129:		2nd column: invertY	- If 1, read the Y values from high to low
+        -:  130:		3rd column: invertXYPriority – If 1, iterate y then x instead of x and then y
+        -:  131:	Preserve			              [[0,0,0],
+        -:  132:	90 degree	 		               [1,0,1],
+        -:  133:	180 Degree	 		             [1,1,0],
+        -:  134:	270 degree	 		             [0,1,1],
+        -:  135:	Reflection	 		             [0,1,0],
+        -:  136:	Reflection and 90 Degree	   [0,0,1],
+        -:  137:	Reflection and 180 Degree	   [1,0,0],
+        -:  138:	Reflection and 270 Degree	   [1,1,1]]
+        -:  139:	The order of rows also accounts for the amount of work.
+        -:  140:int[][] 	originalImage;
+        -:  141:int[][] 	newImage;
+        -:  142:char	originalValue, transformedValue;
+        -:  143:int 	NUM_TRANSFORMATIONS = 8;
+        -:  144:int MAX_SIZE = 10;
+        -:  145:int 	patternNum, patternSize, transformedXNdx, transformedYNdx;
+        -:  146:Boolean isValidTransformation;
+        -:  147:String[]	transformationMessage;
+        -:  148:
+        -:  149:
+        -:  150:Solution Analysis
+        -:  151:-----------------------
+        -:  152:The problem will be solved by looking at the input array and by looking at the
+        -:  153:  indices in different orders, checking to see if there is a valid
+        -:  154:  transformation that has been applied to create the output array.
+        -:  155:This works because if we know where each transformations origin is, and how
+        -:  156:  to iterate over the x and y indices then we can read the new image and check
+        -:  157:  each index against the original image. The benefit of this method is that we
+        -:  158:  can stop once we decide that the images do not follow the transformation we
+        -:  159:  are checking. transformationMatrix holds the information about how to read
+        -:  160:  the newImage array to compare it against the originalImage.
+        -:  161:
+        -:  162:
+        -:  163:Algorithm
+        -:  164:-------------
+        -:  165:A00	Define:
+        -:  166:		int[][] transformationMatrix
+        -:  167:		int[][] 	originalImage;
+        -:  168:int[][] 	newImage;
+        -:  169:char	originalValue, transformedValue;
+        -:  170:int 	NUM_TRANSFORMATIONS = 8;
+        -:  171:int 	patternNum, patternSize, transformedXNdx,
+        -:  172:transformedYNdx;
+        -:  173:Boolean isValidTransformation;
+        -:  174:String[]	transformationMessage;
+        -:  175:A01	While(stdin is not empty){
+        -:  176:A02		Read patternSize from stdin;
+        -:  177:A03		For(lineNdx iterates from 0 to patternSize){
+        -:  178:A04			Read originalImage and newImage from stdin;
+        -:  179:		}//For
+        -:  180:A05		For(transformationNdx iterates from 0 to NUM_TRANSFORMATIONS -1){
+        -:  181:A06			Set isValidTransformation to true;
+        -:  182:A07			For(xNdx iterates from 0 to patternSize -1){
+        -:  183:A08				For(yNdx iterates from 0 to patternSize -1){
+        -:  184:A09					Set originalValue to newImage[xNdx][yNdx];
+        -:  185:	Set transformedXNdx to xNdx;
+        -:  186:	Set transformedYNdx to yNdx;
+        -:  187:A10					If(transformationMatrix[transformationNdx][2] is
+        -:  188:equal to 1){
+        -:  189:A11						Set transformedXNdx to yNdx;
+        -:  190:		Set transformedYNdx to xNdx;
+        -:  191:}
+        -:  192:A12					If(transformationMatrix[transformationNdx][0] is
+        -:  193:equal to 1){
+        -:  194:A13						Set transformedXNdx
+        -:  195:to patternSize -1 - transformedXNdx;
+        -:  196:}//If
+        -:  197:A14					If(transformationMatrix[transformationNdx][1] is
+        -:  198:equal to 1){
+        -:  199:A15						Set transformedYNdx
+        -:  200:to patternSize -1 -transformedYNdx;
+        -:  201:}//If
+        -:  202:
+        -:  203:A16					Set transformedValue to
+        -:  204:originalImage[transformedXNdx][transformedYNdx];
+        -:  205:
+        -:  206:A17					If(transformedValue is not equal to originalValue){
+        -:  207:A18						Set isValidTransformation to false;
+        -:  208:Break;
+        -:  209:}//If
+        -:  210:}//For yNdx
+        -:  211:A19				If(isValidTransformation is false){
+        -:  212:A20					Break;
+        -:  213:}//If
+        -:  214:}//For xNdx
+        -:  215:A21			If(isValidTransformation is true){
+        -:  216:
+        -:  217:A22				Display “Pattern ” + patternNum + “ ” +
+        -:  218:transformationMessage[transformationNdx];
+        -:  219:A23				Break;
+        -:  220:}//If
+        -:  221:		}//For transformationNdx
+        -:  222:A24		Set  patternNum to patternNum + 1;
+        -:  223:	}//While
+        -:  224:A25	Return;
+        -:  225:
+        -:  226:
+        -:  227:INPUT SPACE PARTITIONS
+        -:  228:1.	There is one pattern in the input.
+        -:  229:1.1.	patternSize is 1.
+        -:  230:1.1.1.	The pattern is preserved.
+        -:  231:1.1.2.	The pattern was improper.
+        -:  232:1.2.	patternSize is 2.
+        -:  233:1.2.1.	The pattern is preserved.
+        -:  234:1.2.2.	The pattern is a rotation.
+        -:  235:1.2.3.	The pattern is a reflection.
+        -:  236:1.2.4.	The pattern is a reflection and a rotation.
+        -:  237:1.2.5.	The pattern was improper.
+        -:  238:1.3.	patternSize is greater than 2 but at most 10.
+        -:  239:1.3.1.	The pattern is preserved.
+        -:  240:1.3.2.	The pattern is a rotation.
+        -:  241:1.3.3.	The pattern is a reflection.
+        -:  242:1.3.4.	The pattern is a reflection and a rotation.
+        -:  243:1.3.5.	The pattern was improper.
+        -:  244:2.	There are two patterns in the input.
+        -:  245:Two patterns that are variations on (1).
+        -:  246:3.	There are more than two patterns in the input.
+        -:  247:Several patterns that are variations on (1).
+        -:  248:
+        -:  249:
+        -:  250:TEST CASES
+        -:  251:Please see mirrorSMDS_BTL.docx for a grid view of the test cases.
+        -:  252:Program can be tested against these test cases by running mirrorUnitTestBTL.sh
+        -:  253:
+        -:  254:
+        -:  255:ALGORITHM CORRECTNESS ARGUMENT
+        -:  256:CR06	A01 continues reading until the end of the file
+        -:  257:CR07	patternSize is read in by A02
+        -:  258:CR08	originalImage and newImage both are sized when instantiated in A00 to hold
+        -:  259:              up to a pattern of size ten
+        -:  260:CR09	A03 reads in patternSize lines of input for the patterns
+        -:  261:CR10	A04 reads in one line of the patterns
+        -:  262:CR11	A04 reads the originalImage first
+        -:  263:CR12	After reading the first patternSize characters and consuming the space A04
+        -:  264:              reads the pattern information into newImage
+        -:  265:CR13	The valid characters are added to the arrays.
+        -:  266:CR14	pattternNum is started in A00 with the value 1, patternNum is incremented
+        -:  267:           in A25 by one to increment the number to print, and then patternNum is
+        -:  268:           displayed on A22 so that the output contains the patternNum
+        -:  269:CR15	A22 prints out the statement
+        -:  270:
+        -:  271:
+        -:  272:CODE CORRECTNESS ARGUMENT
+        -:  273:CA01	While loop iterates until the stdin is empty
+        -:  274:CA02	The first line is read in and contains the patternNum
+        -:  275:CA03	lineNdx iterates from 0 to patternSize -1
+        -:  276:CA04	Both images are read in from stdin
+        -:  277:CA05	The loop iterates through possible transformations
+        -:  278:CA06	isValidTransformation is set to true
+        -:  279:CA07	xNdx is iterated from 0 to patternSize - 1
+        -:  280:CA08	yNdx is iterated from 0 to patternSize - 1
+        -:  281:CA09	originalValue, newImage, transformedXNdx, and transformedYNdx are set
+        -:  282:CA10	Value from transformationMatrix is checked
+        -:  283:CA11	transformedXNdx and transformedYNdx are set
+        -:  284:CA12	transformationMatrix value is checked
+        -:  285:CA13	transformedXNdx is set
+        -:  286:CA14	transformationMatrix is checked
+        -:  287:CA15	transformedYNdx is set
+        -:  288:CA16	transformedValue is set
+        -:  289:CA17	transformedValue is checked against originalValue
+        -:  290:CA18	isValidTransformation is set
+        -:  291:CA19	isValidTransformation is checked
+        -:  292:CA20	Loop is broken
+        -:  293:CA21	isValidTransformation is checked
+        -:  294:CA22	Output is sent to stdout
+        -:  295:CA23	Loop is broken
+        -:  296:CA24	patternNum is incremented
+        -:  297:CA25	Program returns at end.
+        -:  298:
+        -:  299:
+        -:  300:*********************************************************/
+        -:  301:
+       21:  302:int main()
+        -:  303:{
+        -:  304:  /*L00 : DEFINE */
+       21:  305:  const int NUM_TRANSFORMATIONS = 8;
+       21:  306:  const int MAX_PATTERN_SIZE = 10;
+        -:  307:  const int transformationMatrix[8][3] = {{0,0,0},{1,0,1},
+        -:  308:	 	{1,1,0}, {0,1,1}, {0,1,0}, {0,0,1}, {1,0,0},
+       21:  309:	   {1,1,1}};
+       21:  310:   std::string line;
+        -:  311:  char originalImage[MAX_PATTERN_SIZE][MAX_PATTERN_SIZE];
+        -:  312:  char newImage[MAX_PATTERN_SIZE][MAX_PATTERN_SIZE];
+        -:  313:  char originalValue, transformedValue;
+        -:  314:  int patternNum, patternSize, transformedXNdx, transformedYNdx;
+        -:  315:  bool isValidTransformation;
+        -:  316:  const std::string	transformationMessage[] = {" was preserved."," was rotated 90 degrees.",
+        -:  317:         " was rotated 180 degrees."," was rotated 270 degrees.",
+        -:  318:         " was reflected vertically.",
+        -:  319:         " was reflected vertically and rotated 90 degrees.",
+        -:  320:         " was reflected vertically and rotated 180 degrees.",
+        -:  321:         " was reflected vertically and rotated 270 degrees.",
+      210:  322:         " was improperly transformed."};
+        -:  323:
+       21:  324:   patternNum = 1;
+       21:  325:   std::getline(std::cin, line);
+       89:  326:   while(line.length() > 0){ /*L01*/
+       47:  327:        patternSize = std::stoi(line); /*L02*/
+      195:  328:    		for(int lineNdx = 0; lineNdx < patternSize; lineNdx++){ /*L03*/
+      148:  329:          std::getline(std::cin, line);
+        -:  330:    			//Read originalImage and newImage from stdin; /*L04*/
+      816:  331:            for(int charNdx = 0; charNdx < patternSize; charNdx++){
+      668:  332:              originalImage[charNdx][lineNdx] = line[charNdx];
+        -:  333:            }
+      816:  334:            for(int charNdx = 0; charNdx < patternSize; charNdx++){
+      668:  335:               newImage[charNdx][lineNdx] = line[charNdx + patternSize + 1];
+        -:  336:            }
+        -:  337:    		}//for
+        -:  338:
+      195:  339:    		for(int transformationNdx = 0; transformationNdx < NUM_TRANSFORMATIONS; transformationNdx++){ /*L05*/
+      184:  340:    			isValidTransformation = true; /*L06*/
+      327:  341:    			for(int yNdx = 0; yNdx < patternSize; yNdx++){ /*L07*/
+     1012:  342:    				for(int xNdx = 0; xNdx < patternSize; xNdx++){ /*L08*/
+      869:  343:                  originalValue = originalImage[xNdx][yNdx]; /*L09*/
+      869:  344:    	            transformedXNdx = xNdx;
+      869:  345:    	            transformedYNdx = yNdx;
+      869:  346:    					if(transformationMatrix[transformationNdx][2] == 1){ /*L10*/
+      159:  347:                     transformedXNdx = yNdx; /*L11*/
+      159:  348:    		            transformedYNdx = xNdx;
+        -:  349:                  }
+      869:  350:    					if(transformationMatrix[transformationNdx][0] == 1){ /*L12*/
+      446:  351:    						transformedXNdx = patternSize -1 - transformedXNdx; /*L13*/
+        -:  352:                  }//if
+      869:  353:    					if(transformationMatrix[transformationNdx][1] == 1){ /*L14*/
+      441:  354:    						transformedYNdx = patternSize -1 -transformedYNdx; /*L15*/
+        -:  355:                  }//if
+        -:  356:
+      869:  357:    					transformedValue = newImage[transformedXNdx][transformedYNdx]; /*L16*/
+        -:  358:
+      869:  359:    					if(transformedValue != originalValue){ /*L17*/
+      148:  360:    						isValidTransformation = false; /*L18*/
+      148:  361:                     break;
+        -:  362:                  }//if
+        -:  363:               }//for xNdx
+      291:  364:    				if(isValidTransformation == false){ /*L19*/
+      148:  365:    					break; /*L20*/
+        -:  366:               }//if
+        -:  367:            }//for yNdx
+      184:  368:    			if(isValidTransformation == true){ /*L21*/
+       36:  369:    				std::cout << "Pattern " << patternNum <<
+       72:  370:               transformationMessage[transformationNdx] << std::endl; /*L22*/
+       36:  371:    				break; /*L23*/
+        -:  372:            }//if
+        -:  373:    		}//for transformationNdx
+       47:  374:         if(!isValidTransformation){
+       11:  375:            std::cout << "Pattern " << patternNum << transformationMessage[8] << std::endl;
+        -:  376:         }
+       47:  377:         patternNum = patternNum + 1; /*L24*/
+       47:  378:         std::getline(std::cin, line);
+        -:  379:    	}//while
+        -:  380:      //std::cout << std::endl;
+      210:  381:   return 0; /*L25*/
+       63:  382:}//main
+        -:  383:
+        -:  384://end mirrorBTL.cpp

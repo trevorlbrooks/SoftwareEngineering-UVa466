@@ -1,0 +1,69 @@
++++mirrorBTL Test Run+++
+Testing the file mirrorBTL.cpp
+
+Input File: unit_tests/mirrorIn01.txt   Output File: unit_tests/mirrorOut01.txt
+Passed
+
+Input File: unit_tests/mirrorIn02.txt   Output File: unit_tests/mirrorOut02.txt
+Passed
+
+Input File: unit_tests/mirrorIn03.txt   Output File: unit_tests/mirrorOut03.txt
+Passed
+
+Input File: unit_tests/mirrorIn04.txt   Output File: unit_tests/mirrorOut04.txt
+Passed
+
+Input File: unit_tests/mirrorIn05.txt   Output File: unit_tests/mirrorOut05.txt
+Passed
+
+Input File: unit_tests/mirrorIn06.txt   Output File: unit_tests/mirrorOut06.txt
+Passed
+
+Input File: unit_tests/mirrorIn07.txt   Output File: unit_tests/mirrorOut07.txt
+Passed
+
+Input File: unit_tests/mirrorIn08.txt   Output File: unit_tests/mirrorOut08.txt
+Passed
+
+Input File: unit_tests/mirrorIn09.txt   Output File: unit_tests/mirrorOut09.txt
+Passed
+
+Input File: unit_tests/mirrorIn10.txt   Output File: unit_tests/mirrorOut10.txt
+Passed
+
+Input File: unit_tests/mirrorIn11.txt   Output File: unit_tests/mirrorOut11.txt
+Passed
+
+Input File: unit_tests/mirrorIn12.txt   Output File: unit_tests/mirrorOut12.txt
+Passed
+
+Input File: unit_tests/mirrorIn13.txt   Output File: unit_tests/mirrorOut13.txt
+Passed
+
+Input File: unit_tests/mirrorIn14.txt   Output File: unit_tests/mirrorOut14.txt
+Passed
+
+Input File: unit_tests/mirrorIn15.txt   Output File: unit_tests/mirrorOut15.txt
+Passed
+
+Input File: unit_tests/mirrorIn16.txt   Output File: unit_tests/mirrorOut16.txt
+Passed
+
+Input File: unit_tests/mirrorIn17.txt   Output File: unit_tests/mirrorOut17.txt
+Passed
+
+Input File: unit_tests/mirrorIn18.txt   Output File: unit_tests/mirrorOut18.txt
+Passed
+
+Input File: unit_tests/mirrorIn19.txt   Output File: unit_tests/mirrorOut19.txt
+Passed
+
+Input File: unit_tests/mirrorIn20.txt   Output File: unit_tests/mirrorOut20.txt
+Passed
+
+Input File: unit_tests/mirrorIn21.txt   Output File: unit_tests/mirrorOut21.txt
+Passed
+
+All test cases passed.
+
+---mirrorBTL Test Run---

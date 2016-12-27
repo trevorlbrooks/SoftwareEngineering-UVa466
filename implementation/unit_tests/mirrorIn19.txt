@@ -1,0 +1,17 @@
+4
+X.X. .X.X
+XXXX ....
+.... XXXX
+.X.X X.X.
+4
+X.X. .X.X
+XXXX XXXX
+.... ....
+.X.X X.X.
+6
+X.X.X. X.X.X.
+.X.X.X .X.X.X
+X.X.X. X.X.X.
+XXXXXX XXXXXX
+...... ......
+XXXXXX XXXXX.
